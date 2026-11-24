@@ -664,3 +664,12 @@ footer {
 #logout-button:hover {
   background-color: rgba(255, 255, 255, 0.3);
 }
+
+/* Accessible theme toggle; existing light palette remains the default. */
+.theme-toggle { margin-top: 8px; background: var(--surface); color: var(--text-primary); border: 1px solid var(--border-focus); padding: 6px 12px; border-radius: 5px; cursor: pointer; }
+.theme-toggle:focus-visible { outline: 3px solid #ffbf47; outline-offset: 3px; }
+:root[data-theme="dark"] { color-scheme: dark; --primary: #a8b6ff; --primary-light: #4f5eb1; --primary-dark: #354285; --primary-text: #10152b; --background: #10131b; --surface: #1b2230; --text-primary: #f0f3fa; --text-secondary: #c3ccda; --border: #46536a; --border-light: #354156; --border-focus: #8997b2; --success: #7de5a0; --success-light: #183a28; --warning: #ffc36a; --warning-light: #46331a; --error: #ff9696; --error-light: #482326; --info: #9fddf0; --info-light: #1c3948; }
+:root[data-theme="dark"] button { color: var(--text-primary); }
+:root[data-theme="dark"] header { background: #26366a; color: #fff; }
+:root[data-theme="dark"] .register-button, :root[data-theme="dark"] .category-filter.active, :root[data-theme="dark"] .day-filter.active, :root[data-theme="dark"] .time-filter.active { background: #354285; color: #fff; }
+:root[data-theme="dark"] input { background: var(--surface); color: var(--text-primary); }
