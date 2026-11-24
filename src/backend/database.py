@@ -32,6 +32,17 @@ def init_database():
 
 # Initial database if empty
 initial_activities = {
+    "Manga Maniacs": {
+        "description": "Step into the world of manga! Discover bold heroes, epic adventures, and unforgettable stories as we explore Japanese graphic novels together.",
+        "schedule": "Tuesdays, 7:00 PM - 8:00 PM",
+        "schedule_details": {
+            "days": ["Tuesday"],
+            "start_time": "19:00",
+            "end_time": "20:00"
+        },
+        "max_participants": 15,
+        "participants": []
+    },
     "Chess Club": {
         "description": "Learn strategies and compete in chess tournaments",
         "schedule": "Mondays and Fridays, 3:15 PM - 4:45 PM",
